@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Cormorant Upright';
+    src: 
+         url('./fonts/CormorantUpright-Regular.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Open sans';
+    src: 
+         url('./fonts/OpenSans-VariableFont.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'The Nautigal';
+    src: 
+         url('./fonts/TheNautigal-Regular.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+  }
+
+nav p, .home, .pages, .login-p {
+    font-family: 'Cormorant Upright';
+  }
+
+  nav li {
+    font-family: 'Open sans';
+  }
+
+  .signature {
+    font-family: 'The Nautigal';
+  }
+  
+
