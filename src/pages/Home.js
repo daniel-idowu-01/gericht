@@ -12,6 +12,7 @@ import Food2 from './images/food-2.png'
 import Food3 from './images/food-3.png'
 import Food4 from './images/food-4.png'
 import Food5 from './images/food-5.png'
+import yellowBg from './images/yellowBg.png'
 import ContactImg from './images/contact-img.png'
 import '../index.css'
 
@@ -22,7 +23,7 @@ function Home() {
         <div className="home bg-black text-white h-full md:pb-44">
 
             {/* Header Section */}
-            <section className="header md:flex justify-evenly mb-10 px-10 md:px-30 py-14">
+            <section className="header flex flex-col md:flex-row gap-14 md:gap-0 justify-evenly mb-10 px-10 md:px-30 py-14">
                 <div >
                     <p>Chase The New Flavour</p>
                     <img alt='' src={Design} className='w-5 h-5'></img>
@@ -31,7 +32,9 @@ function Home() {
                     <button className='bg-goldcolor px-4 py-1 mt-8 text-black hover:opacity-75 hover:text-white'>Explore Menu</button>
                 </div>
                 <div className='shrink-0 relative'>
-                    <img alt='' src={HeadImg} className = 'md:w-96 md:h-96 md:w-128 md:h-128 mt-5 md:mt-0'></img>
+                    <img alt='' src={yellowBg} className = 'h-64 w-64 absolute -top-3 -right-3 z-10' />
+                    <img alt='' src={HeadImg} className = 'h-96 w-96 z-40 relative' />
+                    <img alt='' src={yellowBg} className = 'h-64 w-64 absolute -bottom-3 -left-3 z-10' />
                 </div>
             </section>
 
@@ -124,8 +127,11 @@ function Home() {
             </section>
 
             {/* Video Section */}
-            <section className='p-5'>
-                <video alt='' src={Video} controls></video>
+            <section className='flex justify-center items-center'>
+                <div className=' md:w-4/5'>
+                    <video alt='' src={Video} controls></video>
+                </div>
+                
             </section>
 
             {/* Our Laurels */}

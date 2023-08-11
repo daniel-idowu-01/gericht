@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom"
+import FoodCard from './FoodCard';
 
 function Food(props) {
   
@@ -41,10 +43,9 @@ function Food(props) {
   }
 
   const fullData = meals.map(meal => (
-        <div className='border p-5 m-5' >
-          <img className='' src= {meal.strMealThumb} alt=''  /> 
-          <h1 className='text-center text-xl p-2' key={meal.idMeal}> {meal.strMeal} </h1>
-        </div>
+      <Link to={`/food/${meal.strMeal}`}  key={meal.idMeal} >
+        <FoodCard image={meal.strMealThumb} name={meal.strMeal} />
+      </Link>
 ))
 
   return (

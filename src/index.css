@@ -38,4 +38,7 @@ nav p, .home, .pages, .login-p {
     font-family: 'The Nautigal';
   }
   
+  tr:nth-child(2) {
+    background-color: #60606015;
+  }
 

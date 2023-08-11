@@ -22,7 +22,7 @@ const closeBar = () => {
     return (
         <nav className="flex justify-between p-5 px-10 bg-black text-white">
             <div>
-                <p className="text-xl font-bold">GERICHT</p>
+                <Link to='/'> <p className="text-xl font-bold">GERICHT</p> </Link>
             </div>
             
             <div>
@@ -32,7 +32,6 @@ const closeBar = () => {
                     <li className="hidden md:block text-sm hover:opacity-75"> <Link to="/food">Food</Link> </li>
                     <li className="hidden md:block text-sm hover:opacity-75"> <Link to="/contact">Contact Us</Link> </li>
                     <li className="hidden md:block text-sm hover:opacity-75"> <Link to="/blog">Blog</Link> </li>
-                    <li className="hidden md:block text-sm hover:opacity-75"> <Link to="/order">Order</Link> </li>
                     <button className="md:hidden text-2xl px-3 py-0.5" onClick={sideBar}>{showSideBar ? <VscChromeClose /> : <FaBars />}</button>
                 </ul>
             </div>
@@ -47,7 +46,6 @@ const closeBar = () => {
                      <Link onClick={closeBar} to="/food" className="block text-lg">Food</Link> 
                      <Link onClick={closeBar} to="/contact" className="block text-lg">Contact</Link>
                      <Link onClick={closeBar} to="/blog" className="block text-lg">Blog</Link>
-                     <Link onClick={closeBar} to="/order" className="block text-lg">Order</Link>
                      <Link onClick={closeBar} to="/login" className="block text-lg">Login / Register</Link>
                 </div>
 
