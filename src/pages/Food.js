@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom"
 import FoodCard from './FoodCard';
 
-function Food(props) {
+function Food() {
   
   const [mealCategory, setMealCategory] = useState('Seafood');
   const [meals, setMeals] = useState([]);
