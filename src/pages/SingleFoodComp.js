@@ -43,7 +43,9 @@ const SingleFoodComp = () => {
 
   return (
     <div className='bg-black text-white pb-12'>
-        <Link to='/food' className='opacity-50  underline ml-5'> <AiOutlineArrowLeft className=' inline-block' /> previous page </Link>
+          <Link to='/food' className='opacity-50  underline ml-5'>
+              <AiOutlineArrowLeft className=' inline-block' /> previous page
+           </Link>
         { eachMeals.map(meal => (
             <div
              className='text-left'
@@ -51,13 +53,13 @@ const SingleFoodComp = () => {
                 <h1 className='opacity-50 text-3xl text-center mt-5'> MEAL DETAILS </h1>
                 <div className='flex flex-col md:flex-row justify-around gap-5 px-5 mt-5 md:mt-10'>
                     {/* Product Image and Product Name */}
-                    <section className=''>
-                        <img className='border border-opacity-80 p-5 w-80' src={meal.strMealThumb} alt='' />
+                    <section className='w-1/2'>
+                        <img className='border border-opacity-80 p-5' src={meal.strMealThumb} alt='' />
                     </section>
                     
                     {/* Product category and Area */}
                     <section className='flex flex-col gap-5'>
-                        <p className='w-80 uppercase text-4xl'> {meal.strMeal} </p>
+                        <p className='w-80 uppercase text-5xl'> {meal.strMeal} </p>
                         <div className=' text-white text-opacity-30'>
                             <p>Category: {meal.strCategory}</p>
                             <p>Area: {meal.strArea}</p>
@@ -141,7 +143,7 @@ const SingleFoodComp = () => {
                          onClick={() => addToCart(meal.strMealThumb, meal.strMeal , meal.strCategory)}
                          className='bg-goldcolor px-8 py-2 mt-8 text-black hover:opacity-75 hover:text-white'>
                             Save Meal
-                            </button>
+                        </button>
                         <Link
                          to='/saved-meals'
                           className='opacity-50 underline ml-5 relative top-5'>
