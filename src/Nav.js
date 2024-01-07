@@ -19,6 +19,7 @@ const Nav = () => {
         setShowSideBar(false)
     }
 
+    // navbar links
     const links = [
         {
             id: 1,
