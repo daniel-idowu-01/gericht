@@ -7,7 +7,8 @@ import Awards from "./Awards";
 import PhotoGallery from "./PhotoGallery";
 import Contact from "./Contact";
 import Subscribe from "./Subscribe";
+import Footer from "./Footer";
 
 export {
-  Header, About, TodaySpecialComp, WhatWeBelieve, VideoComp, Awards, PhotoGallery, Contact, Subscribe
+  Header, About, TodaySpecialComp, WhatWeBelieve, VideoComp, Awards, PhotoGallery, Contact, Subscribe, Footer
 }
