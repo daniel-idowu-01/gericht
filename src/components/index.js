@@ -5,7 +5,8 @@ import WhatWeBelieve from "./WhatWeBelieve";
 import VideoComp from "./VideoComp";
 import Awards from "./Awards";
 import PhotoGallery from "./PhotoGallery";
+import Contact from "./Contact";
 
 export {
-  Header, About, TodaySpecialComp, WhatWeBelieve, VideoComp, Awards, PhotoGallery
+  Header, About, TodaySpecialComp, WhatWeBelieve, VideoComp, Awards, PhotoGallery, Contact
 }
