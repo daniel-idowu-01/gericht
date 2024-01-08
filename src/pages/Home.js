@@ -1,7 +1,5 @@
 import Design from './images/Vector.svg'
-
 import ListGroup from './ListGroup';
-import Video from './images/restaurant-1192.mp4'
 import Food1 from './images/food-1.jpg'
 import Food2 from './images/food-2.png'
 import Food3 from './images/food-3.png'
@@ -10,7 +8,7 @@ import Food5 from './images/food-5.png'
 import yellowBg from './images/yellowBg.png'
 import ContactImg from './images/contact-img.png'
 import '../index.css'
-import { Header, About, TodaySpecialComp, WhatWeBelieve } from '../components';
+import { Header, About, TodaySpecialComp, WhatWeBelieve, VideoComp } from '../components';
 
 
 function Home() {
@@ -27,9 +25,7 @@ function Home() {
             <WhatWeBelieve />
 
             {/* Video Section */}
-            <section className='flex justify-center items-center'>
-                <video alt='' src={Video} controls></video>
-            </section>
+            <VideoComp />
 
             {/* Awards and Recognition */}
             <section className='bg-bgColor flex flex-col sm:flex-row gap-10 justify-around p-10 sm:py-40 sm:px-32'>
