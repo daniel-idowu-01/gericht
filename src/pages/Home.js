@@ -1,7 +1,4 @@
-import HeadImg from './images/Hero-img.png'
-import Knife from './images/knife.png'
 import Design from './images/Vector.svg'
-import G from './images/G.png';
 import Jug from './images/jug.png'
 import ListGroup from './ListGroup';
 import TodaySpecial from './TodaySpecial';
@@ -15,6 +12,8 @@ import Food5 from './images/food-5.png'
 import yellowBg from './images/yellowBg.png'
 import ContactImg from './images/contact-img.png'
 import '../index.css'
+import { Header, About } from '../components';
+
 
 function Home() {
 
@@ -23,69 +22,10 @@ function Home() {
         <div className="home bg-black text-white">
 
             {/* Header Section */}
-            <section
-                className="flex flex-col sm:flex-row gap-10 sm:gap-0 justify-between items-center p-10 sm:py-20 sm:px-32"
-            >
-                <div className='flex flex-col gap-5 sm:gap-10'>
-                    <div>
-                        <p>Chase The New Flavour</p>
-                        <img alt='' src={Design} className='w-5 h-5' />
-                    </div>
-                    <h1 className='text-goldcolor text-4xl sm:text-6xl w-auto tracking-wider leading-tight'>
-                        The Key To Fine Dining
-                    </h1>
-                    <p className='w-auto sm:w-[70%] text-xl sm:text-2xl leading-relaxed'>
-                        Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus
-                    </p>
-                    <button className='w-1/2 sm:w-[20%] bg-goldcolor px-4 py-3 text-black hover:bg-opacity-80'>
-                        Explore Menu
-                    </button>
-                </div>
-
-                <div className='shrink-0 relative'>
-                    <img alt='' src={yellowBg} className = 'h-64 w-64 absolute -top-3 -right-3 z-10' />
-                    <img alt='' src={HeadImg} className = 'h-96 w-96 z-40 relative' />
-                    <img alt='' src={yellowBg} className = 'h-64 w-64 absolute -bottom-3 -left-3 z-10' />
-                </div>
-            </section>
+            <Header />
 
             {/* About Us and Our History Section */}
-            <section
-                className='mt-10 sm:mt-0 bg-bgColor w-full block md:flex justify-betweeen md:justify-center md:items-center p-10 sm:py-40 sm:px-32'
-            >
-                {/* About Us */}
-                <div className='text-center md:text-right z-10 relative'>
-                    <h3 className='text-goldcolor text-4xl'>About Us</h3>
-                    <img alt='' src={Design} className='block w-5 h-5 absolute right-1/2 md:right-0' />
-                    <p className='w-full md:w-96 mt-10 md:mt-8 text-dimBlack text-xl'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.
-                    </p>
-                    <button className='bg-goldcolor px-8 py-2 mt-8 text-black hover:bg-opacity-80'>
-                        Read More
-                    </button>
-                </div>
-
-                <img alt='' src={G} className='hidden md:block absolute w-64 h-64 opacity-50' />
-
-                {/* Knife Image */}
-                <div className='z-10'>
-                    <img alt='' className='hidden md:block w-fit h-96 mx-14' src={Knife} />
-                </div>
-
-                {/* Our History */}
-                <div className='text-center md:text-left mt-16 md:mt-0 z-10 relative'>
-                    <h3 className='text-goldcolor text-4xl'>Our History</h3>
-                    <img alt='' src={Design} className='block absolute w-5 h-5 left-1/2 md:left-0 rotate-180' />
-                    <p className='w-full md:w-96 mt-10 md:mt-8 text-dimBlack text-xl'>
-                        Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.
-                    </p>
-                    <button
-                        className='bg-goldcolor px-8 py-2 mt-8 text-black hover:bg-opacity-80'
-                    >
-                        Read More
-                    </button>
-                </div>
-            </section>
+            <About />
 
             {/* Today's Special */}
             <section className='p-10 sm:py-40 sm:px-32'>
