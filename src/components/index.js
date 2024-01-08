@@ -6,7 +6,8 @@ import VideoComp from "./VideoComp";
 import Awards from "./Awards";
 import PhotoGallery from "./PhotoGallery";
 import Contact from "./Contact";
+import Subscribe from "./Subscribe";
 
 export {
-  Header, About, TodaySpecialComp, WhatWeBelieve, VideoComp, Awards, PhotoGallery, Contact
+  Header, About, TodaySpecialComp, WhatWeBelieve, VideoComp, Awards, PhotoGallery, Contact, Subscribe
 }
