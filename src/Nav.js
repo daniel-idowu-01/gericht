@@ -78,7 +78,7 @@ const Nav = () => {
 
             {/* Mobile View sideBar */}
             <div
-                className={` ${showSideBar ? 'block' : 'hidden'} space-y-8 md:hidden absolute top-16 right-0.5 bg-black p-12 px-16 h-fit w-80 pb-20 text-center items-center `}
+                className={` ${showSideBar ? 'right-0.5' : '-right-96'} z-50 space-y-16 md:hidden absolute top-16 bg-black p-12 px-16 h-screen w-80 pb-20 text-center items-center transition-all`}
             >
                 {
                     links.map(link => (
