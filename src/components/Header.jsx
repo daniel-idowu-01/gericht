@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeadImg from '../pages/images/Hero-img.png'
 import yellowBg from '../pages/images/yellowBg.png'
 import Design from '../pages/images/Vector.svg'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Header = () => {
+
+  useEffect(() => {
+    Aos.init()
+  }, [])
+
+
   return (
     <section
+       data-aos="flip-left"
       className="flex flex-col sm:flex-row gap-10 sm:gap-0 justify-between items-center p-10 sm:py-20 sm:px-32"
     >
       <div className='flex flex-col gap-5 sm:gap-10'>
