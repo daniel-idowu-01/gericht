@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Design from '../pages/images/Vector.svg'
 import G from '../pages/images/G.png';
 import Knife from '../pages/images/knife.png'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const About = () => {
+
+  useEffect(() => {
+    Aos.init()
+  }, [])
+
   return (
     <section
+      data-aos="flip-right"
       className='mt-10 sm:mt-0 bg-bgColor w-full block md:flex justify-betweeen md:justify-center md:items-center p-10 sm:py-40 sm:px-32'
     >
       {/* About Us */}

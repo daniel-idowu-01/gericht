@@ -11,10 +11,9 @@ const Header = () => {
     Aos.init()
   }, [])
 
-
   return (
     <section
-       data-aos="flip-left"
+      data-aos="flip-left"
       className="flex flex-col sm:flex-row gap-10 sm:gap-0 justify-between items-center p-10 sm:py-20 sm:px-32"
     >
       <div className='flex flex-col gap-5 sm:gap-10'>
