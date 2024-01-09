@@ -34,12 +34,16 @@ function Food() {
 
   /* Action when content is loading */
   if (isLoading) {
-    return <p className='text-3xl'>Loading...</p>;
+    return <p className='text-3xl h-screen bg-black text-white text-center py-5 md:py-10'>
+      Loading...
+    </p>;
   }
 
   /* Action when content contains error */
   if (error) {
-    return <p className='text-3xl'>Error: {error.message}</p>;
+    return <p className='text-3xl h-screen bg-black text-white text-center py-5 md:py-10'>
+      Error: {error.message}
+    </p>;
   }
 
   const fullData = meals.map(meal => (
