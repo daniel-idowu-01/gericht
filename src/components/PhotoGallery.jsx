@@ -1,13 +1,22 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
 import Food2 from '../pages/images/food-2.png'
 import Food3 from '../pages/images/food-3.png'
 import Food4 from '../pages/images/food-4.png'
 import Food5 from '../pages/images/food-5.png'
 import Design from '../pages/images/Vector.svg'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const PhotoGallery = () => {
+
+  useEffect(() => {
+    Aos.init()
+  }, [])
+
   return (
-    <section className='p-10 sm:py-40 sm:px-32 md:flex md:justify-between'>
+    <section
+      data-aos="flip-right"
+      className='p-10 sm:py-40 sm:px-32 md:flex md:justify-between'>
       <div className='text-left relative'>
         <p>Instagram</p>
         <img alt='' src={Design} className='block w-5 h-5' />

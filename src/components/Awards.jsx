@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ListGroup from '../pages/ListGroup'
 import Design from '../pages/images/Vector.svg'
 import Food1 from '../pages/images/food-1.jpg'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Awards = () => {
+
+  useEffect(() => {
+    Aos.init()
+  }, [])
+
   return (
-    <section className='bg-bgColor flex flex-col sm:flex-row gap-10 justify-around p-10 sm:py-40 sm:px-32'>
+    <section
+      data-aos="flip-left"
+      className='bg-bgColor flex flex-col sm:flex-row gap-10 justify-around p-10 sm:py-40 sm:px-32'>
         
       <div className='text-center md:text-left mt-10 md:mt-0'>
         <p>Awards & recognition</p>

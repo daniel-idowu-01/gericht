@@ -1,11 +1,19 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
 import yellowBg from '../pages/images/yellowBg.png'
 import RonLach from '../pages/images/ron-lach.png'
 import Design from '../pages/images/Vector.svg'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const WhatWeBelieve = () => {
+
+  useEffect(() => {
+      Aos.init()
+  }, [])
+  
   return (
     <section
+      data-aos="flip-right"
       className='bg-bgColor flex flex-col sm:flex-row gap-5 sm:gap-0 justify-around p-10 sm:py-40 sm:px-32'
     >
       <div className='shrink-0 relative grid place-items-center'>

@@ -1,11 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TodaySpecial from '../pages/TodaySpecial'
 import Jug from '../pages/images/jug.png'
 import Design from '../pages/images/Vector.svg'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const TodaySpecialComp = () => {
+
+    useEffect(() => {
+      Aos.init()
+    }, [])
+    
   return (
-    <section className='p-10 sm:py-40 sm:px-32'>
+      <section
+        data-aos="flip-left"
+        className='p-10 sm:py-40 sm:px-32'
+      >
       <p className='text-center'>Menu That Fits Your Palatte</p>
       <img alt='' src={Design} className='w-5 h-5 absolute left-1/2' />
       <h2 className='text-goldcolor text-center text-4xl mt-7 mb-7'>Today's Special</h2>
