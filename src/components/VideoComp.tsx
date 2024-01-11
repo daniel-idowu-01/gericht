@@ -4,7 +4,7 @@ import Video from '../pages/images/restaurant-1192.mp4'
 const VideoComp = () => {
   return (
     <section className='flex justify-center items-center'>
-      <video alt='' src={Video} controls></video>
+      <video src={Video} controls></video>
     </section>
   )
 }
