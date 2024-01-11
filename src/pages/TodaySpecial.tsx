@@ -1,5 +1,6 @@
+import React from "react"
 
-function TodaySpecial(props) {
+function TodaySpecial(props: any) {
     return (
         <div className="flex justify-around md:w-full mt-8 md:mt-16">
             <div>

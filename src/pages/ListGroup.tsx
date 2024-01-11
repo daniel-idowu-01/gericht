@@ -1,6 +1,7 @@
+import React from 'react'
 import Group from './images/Group.png'
 
-function ListGroup(props) {
+function ListGroup(props: any) {
     return (
         <div className="md:flex justify-between">
             <div className='mt-2'>

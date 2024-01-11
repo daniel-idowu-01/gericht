@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import TodaySpecial from '../pages/TodaySpecial'
+import TodaySpecial from '../pages/TodaySpecial.tsx'
 import Jug from '../pages/images/jug.png'
 import Design from '../pages/images/Vector.svg'
 import Aos from 'aos'

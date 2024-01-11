@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import ListGroup from '../pages/ListGroup'
+import ListGroup from '../pages/ListGroup.tsx'
 import Design from '../pages/images/Vector.svg'
 import Food1 from '../pages/images/food-1.jpg'
 import Aos from 'aos'
