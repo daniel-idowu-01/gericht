@@ -5,7 +5,7 @@ import Design from '../pages/images/Vector.svg'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-const TodaySpecialComp = () => {
+const TodaySpecialComp: React.FC = () => {
 
     useEffect(() => {
       Aos.init()
